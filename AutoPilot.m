@@ -42,7 +42,7 @@ function AutoPilot_OpeningFcn(hObject, eventdata, handles, varargin)
 handles.output = hObject;
 
 %% Initialize Evironment Simulation Parameters
-handles = vidInit(handles);
+handles = AVCTRL_vidInitAutoVehicleCtrl(handles);
 
 %% Update handles structure
 guidata(hObject, handles);
